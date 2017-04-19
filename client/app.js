@@ -14,8 +14,9 @@ var makeRequest = function(url, callback){
 }
 
 var requestComplete = function(){
+  console.log("here")
   if(this.status !== 200) return 
     var jsonString = this.responseText
-    var countries = JSON.parse(jsonString);
-    console.log(countries)
+    var countries = JSON.parse(jsonString)
+    console.log("dsf"+countries)
 }

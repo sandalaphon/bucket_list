@@ -5,8 +5,8 @@ var path = require('path')
 // app.use(bodyParser.json())
 // app.use(bodyParser.urlencoded{extended: true})
 
-app.get('/' function(req, res){
-  res.sendFile(path.join(__dirname + '/index.html')):
+app.get('/', function(req, res){
+  res.sendFile(path.join(__dirname + '/client/build/index.html'))
 })
 
 app.use(express.static('client/build'))
